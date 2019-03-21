@@ -1,6 +1,5 @@
 # Aliexpress2Allegro
 
-Aplikacja w budowie...
 Small application for chinese item sellers :) 
 
 ## How this application work?
