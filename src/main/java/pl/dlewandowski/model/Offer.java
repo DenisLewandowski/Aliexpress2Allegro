@@ -10,6 +10,7 @@ public class Offer {
     private String description;
     private Set<String> imageURLs;
     private BigDecimal price;
+    private String currency;
     private int quantity;
 
     public String getAliexpressURL() {
@@ -58,5 +59,13 @@ public class Offer {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 }

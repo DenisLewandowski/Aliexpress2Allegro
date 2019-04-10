@@ -1,4 +1,4 @@
-package pl.dlewandowski;
+package pl.dlewandowski.service;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -30,6 +30,9 @@ public class AliexpressOfferDownloader {
         offer.setQuantity(1);
         offer.setDescription(getDescription());
         offer.setPrice(getPrice());
+        offer.setCurrency(getCurrency());
+        offer.setQuantity(1); // Default value
+
 
         return offer;
     }
