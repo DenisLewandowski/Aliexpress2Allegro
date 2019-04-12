@@ -12,6 +12,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import pl.dlewandowski.database.MySqlAcces;
 import pl.dlewandowski.service.AliexpressOfferDownloader;
 import pl.dlewandowski.AliexpressToAllegro;
 
@@ -29,6 +30,11 @@ public class MainWindow {
     private Text appTitle;
 
     public MainWindow() {
+
+        MySqlAcces mySqlAcces = new MySqlAcces();
+        System.out.println(mySqlAcces.getUserByName("admin2"));
+
+
         stage = AliexpressToAllegro.primaryStage;
         stage.setTitle("Aliexpress2Allegro App");
         stage.getIcons().add(new Image("aliexpress.png"));
